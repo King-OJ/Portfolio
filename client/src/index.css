@@ -34,7 +34,7 @@ main::-webkit-scrollbar {
 }
 
 .mobile-menu {
-  @apply lg:hidden transition duration-200 -top-[9rem] md:-top-[14rem] z-30 right-0 left-0 fixed;
+  @apply lg:hidden transition duration-200 -top-[12rem] md:-top-[14rem] z-30 right-0 left-0 fixed;
 }
 
 button:disabled {
