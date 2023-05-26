@@ -6,7 +6,7 @@ export default function MobileMenu({isMenuOpen, toggleMenu }) {
     <div className={isMenuOpen ? 'mobile-menu opacity-100 translate-y-full ' : 'mobile-menu opacity-0 translate-y-0'}>
         <div className="container mx-auto" >
           <div className="bg-white dark:bg-slate-800 shadow-md py-8 px-6">
-            <ul className="flex flex-col gap-3 md:gap-6 items-center font-semibold">
+            <ul className="flex flex-col gap-6 items-center font-semibold">
               <li onClick={()=>toggleMenu()} className='pb-1 transition hover:cursor-pointer tracking-wide'>
                 <NavLink to='/' className={({isActive})=> isActive ? 'hover:text-[#9E679E] transition text-[#9E679E] flex items-center gap-2' : 'hover:text-[#9E679E] transition flex items-center gap-2' } >Home</NavLink>
               </li>
