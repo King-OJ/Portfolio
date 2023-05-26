@@ -5,15 +5,18 @@ import tailwindCert from '../assets/images/tailwind-cert.jpeg'
  const certs = [
     {
       img: mernCert,
-      title: 'Full Stack MERN'
+      title: 'Full Stack MERN',
+      alt: 'MERN Certificate'
     },
     {
       img: reactCert,
-      title: 'React JS'
+      title: 'React JS',
+      alt: 'React Certificate'
     },
     {
       img: tailwindCert,
-      title: 'Tailwind CSS'
+      title: 'Tailwind CSS',
+      alt: 'Tailwind certificate'
     },
   ]
 

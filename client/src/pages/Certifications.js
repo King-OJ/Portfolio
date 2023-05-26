@@ -1,4 +1,7 @@
 import React from 'react'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import PlaceholderImage from '../assets/images/cert-placeholder.jpg'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Title from '../components/Title'
 import certs from '../utils/certs'
 
@@ -14,8 +17,8 @@ export default function Certifications() {
             {
               certs.map((cert, i)=>{
                 return (
-                  <div key={i} className="space-y-4">
-                    <img src={cert.img} alt="" />
+                  <div key={i} className="space-y-4 flex flex-col items-center">
+                    <LazyLoadImage src={cert.img} alt={cert.alt} effect="blur" PlaceholderSrc={PlaceholderImage}/>
                     <h5 className='text-base md:text-2xl text-center font-extrabold tracking-widest'>{cert.title}</h5>
                   </div>
                 )

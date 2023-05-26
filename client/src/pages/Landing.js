@@ -1,6 +1,9 @@
 import React from 'react'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { MdOutlineGppGood  } from 'react-icons/md'
 import heroImg from '../assets/images/heroImg.jpeg'
+import PlaceholderImage from '../assets/images/hero-placeholder.jpg'
 import Title from '../components/Title'
 import resume from '../assets/myresume.pdf'
 
@@ -41,7 +44,7 @@ export default function Landing() {
       <div className="flex flex-col space-y-6 lg:space-y-0 items-center lg:flex-row-reverse py-10 md:py-16 lg:py-20 w-full">
         <div className="lg:w-[50%] h-full flex justify-end md:pl-6">
           <div className="ring-[#9E679E] ring-2 h-60 w-60 md:h-96 md:w-96 rounded-full overflow-hidden">
-            <img src={heroImg} alt="" className='scale-150' />
+            <LazyLoadImage src={heroImg} alt="clem Oj"  effect="blur" className='scale-150' PlaceholderSrc={PlaceholderImage} />
           </div>
         </div>
         <div className="lg:w-[50%] h-full flex flex-col items-end justify-center">

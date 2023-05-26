@@ -80,9 +80,9 @@ export default function Works() {
                     <div key={i} className={i === active ? 'block' : 'hidden'}>
                       <img src={slide.img} alt={slide.alt} className='h-80 md:h-96' />
                       <div className="my-6 font-headingFont flex justify-between ">
-                        <a href={slide.liveLink} className='text-xs md:text-base underline underline-offset-4'>Visit site</a>
-                        <h6 className='text-sm md:text-base font-semibold'>{slide.title}</h6>
-                        <a href={slide.codeLink} className='text-xs md:text-base underline underline-offset-4'>View code</a>
+                        <a href={slide.liveLink} className='text-xs md:text-base lg:text-lg underline underline-offset-4'>Visit site</a>
+                        <h6 className='text-sm md:text-lg lg:text-xl font-semibold'>{slide.title}</h6>
+                        <a href={slide.codeLink} className='text-xs md:text-base lg:text-lg underline underline-offset-4'>View code</a>
                       </div>
                     </div>
                   )
