@@ -23,10 +23,11 @@ export default function Contact() {
           <div className="w-full flex justify-center">
             <Title title='Contact'/>
           </div>
-          {success &&
+          {success && 
             <div className="text-center my-10 text-green-500 ">
             Thanks for contacting me! I'll give a response as soon as I get this!
-          </div>   
+            </div>  
+           
           }
           <form onSubmit={handleSubmit} className="pb-10 lg:pb-0 space-y-8 my-10 lg:my-16 w-[80%] max-w-2xl mx-auto">
            <FormRow label='name' type='text'/>
@@ -42,7 +43,8 @@ export default function Contact() {
     </main>
     );
 }
-  if (state.errors) {
+
+  if (state.errors.length > 0) {
     return (
       <main className='page container '>
         <div className="py-10 md:py-16 lg:py-20 h-full w-full">
