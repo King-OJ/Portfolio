@@ -17,7 +17,7 @@ export default function About() {
           <div className="w-full flex justify-center">
             <Title title='Education'/>
           </div>
-          <div className='text-base leading-8'>I am a Computer Science Graduate, <b>B.Sc</b> from the prestigious University of Abuja, Nigeria. I am also a Computer Science Graduate <b>OND</b> from Delta State Polytechnic Oghara, Nigeria.</div>
+          <div className='text-base leading-8'>I am a Computer Science Graduate, <b>B.Sc</b> from the prestigious University of Abuja, Nigeria. I am also a Computer Science Graduate <b>OND</b> from Delta State Polytechnic Oghara, Nigeria, having completed high school and earning the relevant high school certificates</div>
           <div className='text-base leading-8'>Education has no end, so I am consistently on a learning curve.</div>
         </div>
       </div>    
