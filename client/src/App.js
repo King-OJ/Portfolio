@@ -20,7 +20,7 @@ function App() {
   }
 
   return (
-    <div className="w-screen relative h-screen flex flex-col">
+    <div className="max-w-screen mx-auto relative h-screen flex flex-col">
       <Navbar toggleMenu={toggleMenu}/>
         <Socials />
         <MobileMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
