@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* width: 100vw; */
   /* opacity: 90%; */
   
   @apply h-full w-full dark:text-white relative text-base md:text-lg text-slate-900 font-bodyFont bg-[#F4F4F4] dark:bg-[#272C48];

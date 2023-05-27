@@ -1,6 +1,6 @@
 import React from 'react'
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import PlaceholderImage from '../assets/images/cert-placeholder.jpg'
+import PlaceholderImage from '../assets/images/placeholders/cert-placeholder.jpg'
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Title from '../components/Title'
 import certs from '../utils/certs'

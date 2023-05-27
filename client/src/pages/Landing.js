@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { MdOutlineGppGood  } from 'react-icons/md'
 import heroImg from '../assets/images/heroImg.jpeg'
-import PlaceholderImage from '../assets/images/hero-placeholder.jpg'
+import PlaceholderImage from '../assets/images/placeholders/hero-placeholder.jpg'
 import Title from '../components/Title'
 import resume from '../assets/myresume.pdf'
 
