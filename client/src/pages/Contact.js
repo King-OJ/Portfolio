@@ -23,12 +23,7 @@ export default function Contact() {
           <div className="w-full flex justify-center">
             <Title title='Contact'/>
           </div>
-          {success && 
-            <div className="text-center my-10 text-green-500 ">
-            Thanks for contacting me! I'll give a response as soon as I get this!
-            </div>  
-           
-          }
+          
           <form onSubmit={handleSubmit} className="pb-10 lg:pb-0 space-y-8 my-10 lg:my-16 w-[80%] max-w-2xl mx-auto">
            <FormRow label='name' type='text'/>
            <FormRow label='email' type='email'/>
@@ -38,7 +33,12 @@ export default function Contact() {
               <label htmlFor="message" className="absolute text-sm text-black dark:text-white duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Message</label>
             </div>
             <button type='submit' disabled={state.submitting} className="cta-btn w-full">Send Proposal</button>
-          </form> 
+          </form>
+          {success && 
+            <div className="text-center my-10 text-green-500 ">
+            Thanks for contacting me! I'll give a response as soon as I get this!
+            </div>  
+          } 
         </div>    
     </main>
     );
@@ -51,11 +51,7 @@ export default function Contact() {
           <div className="w-full flex justify-center">
             <Title title='Contact'/>
           </div>
-          {success &&
-            <div className="text-center my-10 text-red-500 ">
-            There was an error! Try Again!!!
-          </div>   
-          }
+          
             
           <form onSubmit={handleSubmit} className="pb-10 lg:pb-0 space-y-8 my-10 lg:my-16 w-[80%] max-w-2xl mx-auto">
            <FormRow label='name' type='text'/>
@@ -67,6 +63,11 @@ export default function Contact() {
             </div>
             <button type='submit' disabled={state.submitting} className="cta-btn w-full">Send Proposal</button>
           </form> 
+          {success &&
+            <div className="text-center my-10 text-red-500 ">
+            There was an error! Try Again!!!
+          </div>   
+          }
         </div>    
     </main>
     );
