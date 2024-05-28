@@ -10,7 +10,7 @@ import thrivelyImg from "../assets/images/thrivelyImg.png";
 
 const works = [
   {
-    img: comfyImg,
+    img: thrivelyImg,
     title: "Thrively Landing",
     alt: "thrively page",
     liveLink: "https://thrively-six.vercel.app/",
