@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import Title from "../components/Title";
 
 export default function About() {
-  const [experience, setExperience] = useState(6);
-  let experienceYear = 2022;
+  const experience = 6;
+  const experienceYear = 2022;
   const currentYear = new Date().getFullYear();
 
-  if (currentYear > experienceYear) {
-    const diffInYears = currentYear - experienceYear;
-    setExperience(experience + diffInYears);
+  function getExpereinceYears() {
+    if (currentYear > experienceYear) {
+      const diffInYears = currentYear - experienceYear;
+      return experience + diffInYears;
+    }
+    return experience;
   }
 
   return (
@@ -22,11 +25,11 @@ export default function About() {
           <div className="space-y-12">
             <div className="text-base leading-8">
               I'm a website designer and developer from Nigeria, Africa. I
-              currently have <b>{experience} years</b> of hands-on experience in
-              building website applications and creating functionalities to
-              simplify complex features with <b> MERN Stack and Next JS</b>. I
-              have worked with some of the best tools to optimize, speed up and
-              secure websites.
+              currently have <b>{getExpereinceYears()} years</b> of hands-on
+              experience in building website applications and creating
+              functionalities to simplify complex features with{" "}
+              <b> MERN Stack and Next JS</b>. I have worked with some of the
+              best tools to optimize, speed up and secure websites.
             </div>
             <div className="text-base leading-8">
               With great attention to detail and documentations, I can
